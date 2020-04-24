@@ -1,0 +1,247 @@
+{
+  "users": [
+    {
+      "id": "7ec3d2f0-641e-11e9-9d5d-1b8ad05606d1",
+      "password": "$2b$10$RNCVsIxNLKP8Gl.BPoedXuwGczl527UfsLDYcb.9V856ng4kxULrS",
+      "favs": [
+        "18",
+        "1"
+      ],
+      "avatar": "https://gravatar.com/avatar/8e04be7dab487d77f16969fd3e0d45d4",
+      "email": "miduga@gmail.com"
+    },
+    {
+      "id": "a882e1d0-6428-11e9-9b1f-8980b7d40890",
+      "password": "$2b$10$BffxqFIacmPkKr2VZgyu7.r0nMmCMbL3nNw3CdWLpKVSKWkUAQGJS",
+      "favs": [
+        "18",
+        "16",
+        "1",
+        "15"
+      ],
+      "avatar": "https://gravatar.com/avatar/3bccd59be0a57b39bdd9b2760702795e",
+      "email": "dani@gmail.com"
+    },
+    {
+      "id": "09233640-8636-11ea-b2c6-b1bba18d974c",
+      "password": "$2b$10$BIn33QkGbcS1u1GJbdWhTeoFrdGNVidhX1HoGPZjoTmr4oU5J.Dq2",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/1523e6bd73f9d73e0c297ad7f5e312ea",
+      "email": "lincetvm16@gmail.com"
+    },
+    {
+      "id": "b4e64fd0-8636-11ea-b2c6-b1bba18d974c",
+      "password": "$2b$10$kaalX2hC7KuP.nU8TO2MguUrISOdY4Z8h0FZHdMnQEXxZb0aOEMrG",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/ac070e69642727757c0860b9cba39eeb",
+      "email": "lince@gmail.com"
+    },
+    {
+      "id": "90282c10-8657-11ea-8037-9b220e751bf3",
+      "password": "$2b$10$3GPBWxvKK.U/xb5cXBBZqeFnFd/ri6mrlRhe20NUyw6ZbEZIMnsqK",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/c9c53383d621536af756482324dab677",
+      "email": "thovim@gmail.com"
+    },
+    {
+      "id": "58607830-8659-11ea-8037-9b220e751bf3",
+      "password": "$2b$10$jMs80.EY2C/2bs8XLV6yIeskW5mVNGUTHUuOMx/6l03QPWirhXqrq",
+      "favs": [],
+      "avatar": "https://gravatar.com/avatar/8b0d5fdb83e322558385314edbb09315",
+      "email": "tovim@gmail.com"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "cats",
+      "emoji": "🐱",
+      "cover": "http://localhost:8080/api/assets/category_cats.jpg",
+      "path": "/photos/cats"
+    },
+    {
+      "id": 2,
+      "name": "dogs",
+      "emoji": "🐶",
+      "cover": "http://localhost:8080/api/assets/category_dogs.jpg",
+      "path": "/photos/dogs"
+    },
+    {
+      "id": 3,
+      "name": "hamsters",
+      "emoji": "🐹",
+      "cover": "http://localhost:8080/api/assets/category_hamsters.jpg",
+      "path": "/photos/hamsters"
+    },
+    {
+      "id": 4,
+      "name": "rabbits",
+      "emoji": "🐰",
+      "cover": "http://localhost:8080/api/assets/category_rabbits.jpg",
+      "path": "/photos/rabbits"
+    },
+    {
+      "id": 5,
+      "name": "birds",
+      "emoji": "🐦",
+      "cover": "http://localhost:8080/api/assets/category_birds.jpg",
+      "path": "/photos/birds"
+    },
+    {
+      "id": 6,
+      "name": "fishes",
+      "emoji": "🐠",
+      "cover": "http://localhost:8080/api/assets/category_fishes.jpg",
+      "path": "/photos/fishes"
+    }
+  ],
+  "photos": [
+    {
+      "id": 0,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/category_dogs.jpg",
+      "userId": 100,
+      "likes": 7
+    },
+    {
+      "id": 1,
+      "categoryId": 1,
+      "src": "http://localhost:8080/api/assets/photo-1518791841217-8f162f1e1131.jpeg",
+      "userId": 1,
+      "likes": 45
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "src": "http://localhost:8080/api/assets/photo-1520561805070-83c413349512.jpeg",
+      "userId": 1,
+      "likes": 1
+    },
+    {
+      "id": 18,
+      "categoryId": 5,
+      "src": "http://localhost:8080/api/assets/photo-1518001589401-1743b61d1def.jpeg",
+      "userId": 2,
+      "likes": 15
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "src": "http://localhost:8080/api/assets/photo-1452857297128-d9c29adba80b.jpeg",
+      "userId": 1,
+      "likes": 1
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1508280756091-9bdd7ef1f463.jpeg",
+      "userId": 1,
+      "likes": 40
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "src": "http://localhost:8080/api/assets/photo-1553987882-91d92995e16c.jpeg",
+      "userId": 3,
+      "likes": 6
+    },
+    {
+      "id": 13,
+      "categoryId": 1,
+      "src": "http://localhost:8080/api/assets/photo-1513360371669-4adf3dd7dff8.jpeg",
+      "userId": 1,
+      "likes": 7
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "src": "http://localhost:8080/api/assets/photo-1548767797-d8c844163c4c.jpeg",
+      "userId": 1,
+      "likes": 40
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1507146426996-ef05306b995a.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "src": "http://localhost:8080/api/assets/photo-1494256997604-768d1f608cac.jpeg",
+      "userId": 1,
+      "likes": 3
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1518155317743-a8ff43ea6a5f.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1447684808650-354ae64db5b8.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "src": "http://localhost:8080/api/assets/photo-1513360371669-4adf3dd7dff8.jpeg",
+      "userId": 1,
+      "likes": 7
+    },
+    {
+      "id": 19,
+      "categoryId": 6,
+      "src": "http://localhost:8080/api/assets/photo-1531523668299-e20047c89111.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1500879747858-bb1845b61beb.jpeg",
+      "userId": 1,
+      "likes": 27
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "src": "http://localhost:8080/api/assets/photo-1425082661705-1834bfd09dca.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 17,
+      "categoryId": 5,
+      "src": "http://localhost:8080/api/assets/photo-1515619363794-e826f7de3487.jpeg",
+      "userId": 1,
+      "likes": 21
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1504208434309-cb69f4fe52b0.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 20,
+      "categoryId": 6,
+      "src": "http://localhost:8080/api/assets/photo-1522720833375-9c27ffb02a5e.jpeg",
+      "userId": 1,
+      "likes": 0
+    },
+    {
+      "id": 14,
+      "categoryId": 2,
+      "src": "http://localhost:8080/api/assets/photo-1500879747858-bb1845b61beb.jpeg",
+      "userId": 1,
+      "likes": 27
+    }
+  ]
+}
