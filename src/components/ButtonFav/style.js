@@ -9,3 +9,8 @@ export const Button = styled.button`
         margin-right: 4px;
     }
 `
+export const Error = styled.span`
+    font-size: 14px;
+    font-weight: 600;
+    color: red;
+`

@@ -34,6 +34,7 @@ export const NotRegisterUser = () => {
             const onSubmit = ({ email, password }) => {
               const input = { email, password }
               const variables = { input }
+              
               login({ variables })
                 .then(({ data }) => {
                   const { login } = data

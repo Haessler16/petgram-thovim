@@ -32,7 +32,9 @@
     {
       "id": "b4e64fd0-8636-11ea-b2c6-b1bba18d974c",
       "password": "$2b$10$kaalX2hC7KuP.nU8TO2MguUrISOdY4Z8h0FZHdMnQEXxZb0aOEMrG",
-      "favs": [],
+      "favs": [
+        "0"
+      ],
       "avatar": "https://gravatar.com/avatar/ac070e69642727757c0860b9cba39eeb",
       "email": "lince@gmail.com"
     },
@@ -101,7 +103,7 @@
       "categoryId": 2,
       "src": "http://localhost:8080/api/assets/category_dogs.jpg",
       "userId": 100,
-      "likes": 7
+      "likes": 8
     },
     {
       "id": 1,
