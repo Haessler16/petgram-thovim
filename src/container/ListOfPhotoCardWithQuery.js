@@ -22,6 +22,7 @@ const renderProp = ({ loading, error, data }) => {
 
   return <PhotoCard {...photo} />
 }
+
 export const ListOfPhotoCardWithQuery = ({ id }) => {
   return (
     <Query query={GET_SINGLE_PHOTO} variables={{ id }}>
