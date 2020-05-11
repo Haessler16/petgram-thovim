@@ -6,6 +6,7 @@
   "scripts": {
     "now-build": "npm run build",
     "build": "webpack",
+    "dev:mode": "webpack --mode 'development'",
     "lint": "standard",
     "fix": "standard --fix",
     "dev": "webpack-dev-server --history-api-fallback",

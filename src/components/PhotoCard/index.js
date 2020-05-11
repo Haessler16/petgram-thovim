@@ -14,7 +14,7 @@ const DEFAULT_IMAGE = 'http://localhost:8080/api/assets/photo-1518791841217-8f16
 export const PhotoCard = ({ id, src = DEFAULT_IMAGE, likes = 0, liked }) => {
   // const key = `like-${id}`
   // const [liked, setLiked] = useLocalStorage(key, false)
-  const [error, setError] = useState("")
+  const [error, setError] = useState('')
   const [show, element] = useNearScreen()
 
   return (
@@ -31,11 +31,11 @@ export const PhotoCard = ({ id, src = DEFAULT_IMAGE, likes = 0, liked }) => {
               (toggleLike) => {
                 const handleFavClick = () => {
                   toggleLike({ variables: {
-                      input: { id }
-                    }
+                    input: { id }
+                  }
                   }).catch(error => setError(error.graphQLErrors[0].message))
                 }
-                                
+
                 return <ButtonFav error={error} likes={likes} liked={liked} onClick={handleFavClick} />
               }
             }
