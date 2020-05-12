@@ -6,7 +6,7 @@
   "scripts": {
     "now-build": "npm run build",
     "build": "webpack",
-    "dev:mode": "webpack --mode 'development'",
+    "dev:mode": "webpack --mode development",
     "lint": "standard",
     "fix": "standard --fix",
     "dev": "webpack-dev-server --history-api-fallback",
@@ -60,6 +60,18 @@
     "parser": "babel-eslint",
     "extends": [
       "./node_modules/standard/eslintrc.json"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }

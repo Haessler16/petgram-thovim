@@ -3,7 +3,7 @@ import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCard } from '../container/ListOfPhotoCard'
 import { Helmet } from 'react-helmet'
 
-export const Home = ({ id }) => {
+const HomeCompomponent = ({ id }) => {
   return (
     <Fragment>
       <Helmet>
@@ -16,3 +16,7 @@ export const Home = ({ id }) => {
     </Fragment>
   )
 }
+
+export const Home = React.memo(HomeCompomponent, (prevprops, props) => {
+  return prevprops.id === props.id
+})

@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react'
+import React, { useContext, Suspense } from 'react'
 import { GlobalStyles } from './styles/GlobalStyles'
 import { Logo } from './components/Logo'
 
@@ -17,11 +17,13 @@ import { NotFound } from './pages/NotFound'
 //   return children({isAuth: false})
 // }
 
+// const Favs = React.lazy(()=> import("./pages/Favs"))
+
 export const App = () => {
   const { isAuth } = useContext(Context)
 
   return (
-    <Fragment>
+    <Suspense fallback={<div />}>
       <GlobalStyles />
       <Logo />
 
@@ -39,6 +41,6 @@ export const App = () => {
       </Router>
 
       <NavBar />
-    </Fragment>
+    </Suspense>
   )
 }
