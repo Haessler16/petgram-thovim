@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
+const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
 const path = require('path')
 
 module.exports = {
@@ -7,6 +8,7 @@ module.exports = {
     filename: 'app.bundle.js',
     publicPath: '/'
   },
+  // mode: "production",
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
@@ -16,11 +18,29 @@ module.exports = {
       short_name: 'Petgram',
       description: 'Con Petgram puedes ver y darle like a tus fotos mas preciadas de tus mascotas',
       background_color: '#fff',
-      theme_color: 'b1a',
+      theme_color: '#b1a',
       icons: [{
-        src: path.resolve('/src/assets/icon.png'),
+        src: path.resolve('src/assets/icon.png'),
         sizes: [96, 128, 192, 256, 384, 512]
       }]
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp("https://(res.cloudinary.com | imagenes.unplash.com)"),
+          handler:"CacheFirst",
+          options:{
+            cacheName:"images"
+          }
+        },
+        {
+          urlPattern: new RegExp("https://petgram-server-hae.now.sh"),
+          handler:"NetworkFirst",
+          options:{
+            cacheName:"api"
+          }
+        }
+      ]
     })
   ],
   module: {

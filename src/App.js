@@ -8,7 +8,7 @@ import { Context } from './Context'
 import { Home } from './pages/Home'
 import { Detail } from './pages/Detail'
 import { NavBar } from './components/Navbar'
-import { Favs } from './pages/Favs'
+// import { Favs } from './pages/Favs'
 import { User } from './pages/User'
 import { NotRegisterUser } from './pages/NotRegisterUser'
 import { NotFound } from './pages/NotFound'
@@ -17,7 +17,7 @@ import { NotFound } from './pages/NotFound'
 //   return children({isAuth: false})
 // }
 
-// const Favs = React.lazy(()=> import("./pages/Favs"))
+const Favs = React.lazy(()=> import("./pages/Favs"))
 
 export const App = () => {
   const { isAuth } = useContext(Context)

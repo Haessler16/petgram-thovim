@@ -11,5 +11,14 @@
      <noscript>
          <h2>Debes tener Javascript activado para que puedas ver esta pagina</h2>
      </noscript>
+     <script>
+         if("serviceWorker" in window.navigator){
+            addEventListener("load", ()=>{
+                window.navigator.serviceWorker.register("/service-worker.js")
+            })
+            .then(register => console.log("ServiceWorker On"))
+            .catch(error => console.log(error.message))
+         }
+     </script>
 </body>
 </html>
