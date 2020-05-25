@@ -11,7 +11,7 @@ import { useNearScreen } from '../../hooks/useNearScreen'
 import { Link } from '@reach/router'
 import { Error } from '../ButtonFav/style'
 
-const DEFAULT_IMAGE = 'http://localhost:8080/api/assets/photo-1518791841217-8f162f1e1131.jpeg'
+const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
 
 export const PhotoCard = ({ id, src = DEFAULT_IMAGE, likes = 0, liked }) => {
   // const key = `like-${id}`

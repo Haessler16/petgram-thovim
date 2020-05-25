@@ -8,7 +8,7 @@ import { ApolloProvider } from 'react-apollo'
 import Context from './Context'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3500/graphql',
+  uri: 'https://petgram-tvm-4ksk4b6zp.now.sh/graphql',
   request: operation => {
     const token = window.sessionStorage.getItem('token')
     const authorization = token ? `Bearer ${token}` : ''
