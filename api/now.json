@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "petgram-server-thovim",
-  "alias": ["petgram-api-thovim"],
+  "name": "petgram-server-tovim",
+  "alias": ["petgram-api-tovim"],
   "builds": [{ "src": "index.js", "use": "@now/node" }],
   "routes": [{
     "headers": {

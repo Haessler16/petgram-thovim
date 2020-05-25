@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
-const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -27,17 +27,17 @@ module.exports = {
     new WorkboxWebpackPlugin.GenerateSW({
       runtimeCaching: [
         {
-          urlPattern: new RegExp("https://(res.cloudinary.com | imagenes.unplash.com)"),
-          handler:"CacheFirst",
-          options:{
-            cacheName:"images"
+          urlPattern: new RegExp('https://(res.cloudinary.com|imagenes.unsplash.com)'),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images'
           }
         },
         {
-          urlPattern: new RegExp("https://petgram-server-hae.now.sh"),
-          handler:"NetworkFirst",
-          options:{
-            cacheName:"api"
+          urlPattern: new RegExp('https://petgram-server-hae.now.sh'),
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api'
           }
         }
       ]
